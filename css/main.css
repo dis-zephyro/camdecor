@@ -162,6 +162,15 @@ hr {
   float: left;
   width: 330px;
 }
+.block01 ul li a {
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.block01 ul li a:hover {
+  opacity: .7;
+}
 .block01 ul li .item-title {
   color: #fff;
   height: 28px;
@@ -653,6 +662,7 @@ hr {
 .form .form-group {
   margin-bottom: 10px;
 }
+.form textarea,
 .form input[type="text"],
 .form input[type="tel"],
 .form input[type="email"],
@@ -660,7 +670,6 @@ hr {
   display: block;
   outline: none;
   width: 100%;
-  height: 30px;
   padding: 5px 10px;
   border: 1px solid #909090;
   font-size: 14px;
@@ -671,6 +680,16 @@ hr {
   border-radius: 3px;
   behavior: url(css/pie/PIE.htc);
 }
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form input[type="password"] {
+  height: 30px;
+}
+.form textarea {
+  height: 80px;
+}
+.form textarea,
 .form input[type="text"]:focus,
 .form input[type="tel"]:focus,
 .form input[type="email"]:focus,
@@ -695,6 +714,7 @@ hr {
 .form .footnote {
   font-size: 8px;
 }
+.form .red textarea,
 .form .red input[type="text"] {
   border: 1px solid #ff0000;
 }
@@ -729,6 +749,20 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 20px;
+}
+#code {
+  padding: 25px;
+  text-align: center;
+}
+#code .btn-close {
+  top: 10px;
+  right: 10px;
+  width: 17px;
+  height: 17px;
+  z-index: 200;
+  cursor: pointer;
+  position: absolute;
+  background: url("../img/btn-close.png") 0 0 no-repeat;
 }
 /* Typography
    ========================= */

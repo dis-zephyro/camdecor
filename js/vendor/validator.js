@@ -20,8 +20,8 @@ function checkForm(form1) {
         checker = true,
         name  = $("input[name='name']", $form).val(),
         phone = $("input[name='phone']", $form).val(),
-        email = $("input[name='email']", $form).val();
-    // quest = $("textarea[name='question']", $form).val();
+        email = $("input[name='email']", $form).val(),
+        quest = $("textarea[name='question']", $form).val();
 
     if($form.find(".name").hasClass("required")) {
         if(!name) {
@@ -61,15 +61,15 @@ function checkForm(form1) {
         }
     }
 
-    // if($form.find(".question").hasClass("required")) {
-    //   if(!quest) {
-    //     $form.find(".question").addClass("red");
-    //     $form.find(".question").attr("data", error1);
-    //     checker = false;
-    //   } else {
-    //     $form.find(".question").removeClass("red");
-    //   }
-    // }
+     if($form.find(".question").hasClass("required")) {
+       if(!quest) {
+         $form.find(".question").addClass("red");
+         $form.find(".question").attr("data", error1);
+         checker = false;
+       } else {
+         $form.find(".question").removeClass("red");
+       }
+     }
 
     if($form.hasClass("selection")) {
         if(!phone && !email) {

@@ -81,7 +81,7 @@
     background: #ffffff url("../img/icon-arrow.png") center 50px no-repeat;
   }
   .block01 ul li {
-    width: 510px;
+    width: 490px;
   }
   .block01 ul li .item-title {
     height: 42px;
@@ -563,6 +563,9 @@
   .form input[type="password"] {
     height: 42px;
     padding: 10px;
+  }
+  .form textarea {
+    height: 100px;
   }
   .form .form-label {
     display: block;

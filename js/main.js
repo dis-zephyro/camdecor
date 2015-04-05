@@ -9,12 +9,13 @@ $(document).ready(function() {
             var $form = $(this).parent(),
                 name =     $('input[name="name"]', $form).val(),
                 phone =    $('input[name="phone"]', $form).val(),
-                email =    $('input[name="email"]', $form).val();
+                email =    $('input[name="email"]', $form).val(),
+                quest = $("textarea[name='quest']", $form).val();
             console.log(name, phone, email);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, email : email}
+                data: {name: name, phone: phone, email : email, quest : quest}
             }).done(function(msg) {
                 console.log(name, phone, email);
                 $('form').find('input[type=text], textarea').val('');
@@ -36,7 +37,38 @@ $(document).ready(function() {
 
         var h = $(window).height();
     });
+
+    // Анимация
+    var Android = navigator.userAgent.search(/Android/i);
+    var iPhone = navigator.userAgent.search(/iPhone/i);
+    var iPad = navigator.userAgent.search(/iPad/i);
+    if(Android != -1 || iPhone != -1 || iPad != -1) {
+
+    } else {
+
+
+        $(".scroll").each(function () { // анимация по скролу(используйте этот) достаточно добавить анимируемому блоку класс 'scroll' а css анимацию писать так: '.animated.класс_блока'
+            var block = $(this);
+            $(window).scroll(function() {
+                var top = block.offset().top;
+                var bottom = block.height()+top;
+                top = top - $(window).height();
+                var scroll_top = $(this).scrollTop();
+                if ((scroll_top > top) && (scroll_top < bottom)) {
+                    if (!block.hasClass("animated")) {
+                        block.addClass("animated");
+                    }
+                } else {
+                    block.removeClass("animated");
+                }
+            });
+        });
+        $('head').append('<link rel="stylesheet" type="text/css" href="css/animate.css" />'); //подключение файла animation.css если не мобильник
+        $('head').append('<link rel="stylesheet" type="text/css" href="css/animation.css" />'); //подключение файла animation.css если не мобильник
+    }
 });
+
+
 
 
 // Мобильное меню.
@@ -63,6 +95,11 @@ $(".popup").fancybox({
     'closeBtn' : false
 });
 
+$(".code").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
+
 $('.btn-close').click(function(){
     $.fancybox.close();
 });
@@ -81,7 +118,7 @@ function init(){
     });
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Собственный значок метки'
+        hintContent: 'Камдекор'
     }, {
         // Опции.
         // Необходимо указать данный тип макета.
