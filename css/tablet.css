@@ -348,6 +348,108 @@
   .block09 .seminar li .item-text {
     text-align: center;
   }
+  .block10 {
+    padding: 40px 0;
+    background: url("../img/10_bg.jpg") bottom center repeat-x;
+  }
+  .block10 .text-box {
+    float: left;
+    width: 410px;
+  }
+  .block10 .text-box h2 {
+    font-size: 29px;
+    text-align: right;
+    background: none;
+    color: #ff6700;
+  }
+  .block10 .text-box .text {
+    color: #000;
+    font-size: 29px;
+    text-align: right;
+    background: none;
+  }
+  .block11 {
+    padding: 30px 0 40px 0;
+  }
+  .block11 .text-block {
+    width: 525px;
+    margin: 0 auto 55px auto;
+  }
+  .block11 .text-block h2 {
+    margin-bottom: 10px;
+  }
+  .block11 ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .block11 ul li {
+    margin-bottom: 0;
+  }
+  .block12 {
+    padding: 40px 0;
+  }
+  .block12 h2 {
+    margin-bottom: 20px;
+  }
+  .block12 p {
+    width: 560px;
+  }
+  .block12 .image-block {
+    margin-bottom: 35px;
+  }
+  .block12 .image-block .item-image {
+    float: left;
+    width: 33.33333%;
+  }
+  .block13 {
+    padding: 30px 0 40px 0;
+  }
+  .block13 .text-block {
+    width: 455px;
+    padding: 15px 40px;
+    margin: 0 auto 45px auto;
+  }
+  .block13 .text-block h2 {
+    margin-bottom: 10px;
+  }
+  .block13 ul {
+    width: 600px;
+    margin-left: 62px;
+  }
+  .block13 ul li {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .block14 {
+    padding: 40px 0;
+  }
+  .block14 h2 {
+    margin-bottom: 20px;
+  }
+  .block14 .product-inner {
+    margin: 0 -10px;
+  }
+  .block14 .product {
+    width: 100%;
+  }
+  .block14 .product li {
+    width: 160px;
+  }
+  .block14 .text-center {
+    padding-top: 10px;
+  }
+  .block15 {
+    padding-top: 25px;
+  }
+  .block15 .box {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+  .block15 .box .box-text {
+    top: 150px;
+  }
   .text-box {
     float: left;
     width: 410px;

@@ -364,20 +364,15 @@
     background: url("../img/10_bg.jpg") top center repeat-x;
   }
   .block10 .text-box {
-    float: left;
     width: 590px;
   }
   .block10 .text-box h2 {
     font-size: 43px;
-    text-align: right;
   }
   .block10 .text-box .text {
-    color: #000;
     font-size: 43px;
-    text-align: right;
   }
   .block11 {
-    color: #fff;
     height: 646px;
     padding: 40px 0;
     background: url("../img/11_bg.jpg") top center no-repeat;
@@ -385,38 +380,20 @@
   .block11 .text-block {
     width: 780px;
     font-size: 16px;
-    text-align: center;
     padding: 20px 20px;
     margin: 0 auto 80px auto;
-    background: url("../img/pattern-brown.png");
-  }
-  .block11 .text-block h2 {
-    color: #fff;
-    font-size: 36px;
-    line-height: 40px;
-    margin-bottom: 10px;
   }
   .block11 ul li {
-    float: left;
     width: 205px;
     height: 245px;
     font-size: 15px;
-    font-weight: 700;
     line-height: 18px;
     margin-right: 50px;
-    text-align: center;
-    color: #394349;
-    text-transform: uppercase;
     padding: 30px 20px 15px 20px;
-    background: url("../img/pattern-white.png");
   }
   .block11 ul li .item-image {
     width: 110px;
-    overflow: hidden;
     margin: 0 auto 20px auto;
-  }
-  .block11 ul li:last-child {
-    margin-right: 0;
   }
   .block12 {
     padding: 50px 0;
@@ -426,20 +403,12 @@
   }
   .block12 p {
     width: 850px;
-    color: #606060;
     margin: 0 auto 30px auto;
   }
   .block12 .image-block {
-    overflow: hidden;
-    position: relative;
     margin-bottom: 50px;
   }
-  .block12 .image-block .item-image {
-    float: left;
-    width: 33.33333%;
-  }
   .block13 {
-    color: #fff;
     height: 646px;
     padding-top: 60px;
     background: url("../img/13_bg.jpg") top center no-repeat;
@@ -447,15 +416,10 @@
   .block13 .text-block {
     width: 680px;
     font-size: 16px;
-    text-align: center;
     padding: 20px 45px;
     margin: 0 auto 80px auto;
-    background: url("../img/pattern-brown.png");
   }
   .block13 .text-block h2 {
-    color: #fff;
-    font-size: 36px;
-    line-height: 40px;
     margin-bottom: 10px;
   }
   .block13 ul {
@@ -463,20 +427,15 @@
     margin-left: 105px;
   }
   .block13 ul li {
-    float: left;
     width: 220px;
     height: 260px;
     font-size: 14px;
     line-height: 16px;
     margin-right: 80px;
-    color: #394349;
-    text-transform: uppercase;
     padding: 30px 15px 15px 15px;
-    background: url("../img/pattern-white.png");
   }
   .block13 ul li .item-image {
     width: 110px;
-    overflow: hidden;
     margin: 0 auto 20px auto;
   }
   .block14 {
@@ -485,24 +444,19 @@
   .block14 h2 {
     margin-bottom: 30px;
   }
-  .block14 .product {
-    margin: 0 -11px 30px 10px;
+  .block14 .product-inner {
+    margin: 0 -11px 0 -10px;
   }
   .block14 .product li {
-    float: left;
     width: 234px;
     margin: 0 10px 30px 11px;
   }
   .block14 .product li .item-image {
-    position: relative;
     padding-bottom: 29px;
     background: url("../img/14_shadow-l.png") left bottom no-repeat;
   }
   .block14 .product li .price {
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 5px;
-    text-transform: uppercase;
   }
   .block15 {
     padding-top: 35px;
@@ -525,12 +479,9 @@
   .block15 .box .box-text li {
     margin-bottom: 10px;
   }
-  .block16 {
-    height: 560px;
-  }
   .block16 h2 {
-    height: 95px;
-    line-height: 95px;
+    height: 90px;
+    line-height: 90px;
   }
   .block16 #map {
     width: 100%;
