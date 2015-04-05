@@ -1,4 +1,7 @@
 @media (min-width: 1170px) {
+  html {
+    font-size: 18px;
+  }
   .container {
     width: 1080px;
     padding: 0 30px;
@@ -86,7 +89,8 @@
     line-height: 42px;
   }
   .block02 h2 {
-    margin-bottom: 20px;
+    font-size: 27px;
+    color: #ff6700;
   }
   .block02 .bottom {
     height: 76px;
@@ -127,7 +131,11 @@
     margin-left: 160px;
     margin-right: 40px;
   }
+  .block03 .top {
+    height: 180px;
+  }
   .block03 h2 {
+    font-size: 27px;
     margin-bottom: 20px;
   }
   .block03 .inner {
@@ -162,23 +170,19 @@
   }
   .block04 {
     font-size: 18px;
-    padding-top: 45px;
-    background: #ffffff url("../img/01_bg.png") top left repeat-x;
   }
   .block04 h2 {
+    font-size: 27px;
     margin-bottom: 30px;
   }
   .block04 ul {
     width: 987px;
     height: 390px;
-    overflow: hidden;
     margin: 50px auto 70px auto;
-    position: relative;
   }
   .block04 ul li {
     width: 183px;
     height: 182px;
-    position: absolute;
   }
   .block04 ul li.item01 {
     top: 0;
@@ -237,8 +241,6 @@
     bottom: 0;
   }
   .block05 {
-    color: #fff;
-    padding: 40px 0;
     background: url("../img/05_bg.jpg") top center no-repeat;
   }
   .block05 .text-box {
@@ -246,92 +248,65 @@
     width: 610px;
   }
   .block05 .text-box h2 {
-    color: #fff;
     padding: 14px;
     font-size: 30px;
     margin-bottom: 37px;
-    background: url("../img/pattern-brown.png");
   }
   .block05 .text-box p {
     width: 480px;
     padding: 14px;
-    background: url("../img/pattern-brown2.png");
+    font-size: 18px;
   }
   .block06 {
     padding: 50px 0;
   }
   .block06 h2 {
-    color: #394349;
     font-size: 36px;
     margin-bottom: 25px;
   }
   .block06 .clients {
-    overflow: hidden;
     margin-bottom: 30px;
   }
   .block06 .clients li {
-    float: left;
     width: 240px;
     margin-right: 20px;
   }
   .block06 .clients li .item-title {
     font-size: 18px;
-    line-height: 40px;
-    text-align: center;
-    color: #ff6700;
-    text-transform: uppercase;
-  }
-  .block06 .clients li:last-child {
-    margin-right: 0;
   }
   .block06 .area {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
     height: 180px;
     margin-left: -70px;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .block06 .area li {
     width: 204px;
     height: 180px;
-    position: absolute;
   }
   .block06 .area li .item-title {
     font-size: 16px;
     line-height: 30px;
-    text-align: center;
-    font-style: italic;
-    text-transform: uppercase;
   }
   .block06 .area li.item01 {
-    top: 0;
     left: 0;
   }
   .block06 .area li.item02 {
-    top: 0;
     left: 170px;
   }
   .block06 .area li.item03 {
-    top: 0;
     left: 355px;
   }
   .block06 .area li.item04 {
-    top: 0;
     left: 526px;
   }
   .block06 .area li.item05 {
-    top: 0;
     left: 710px;
   }
   .block06 .area li.item06 {
-    top: 0;
     left: 880px;
   }
-  .block06 .image {
-    overflow: hidden;
-  }
   .block06 .image li {
-    float: left;
     width: 340px;
     padding: 0 5px;
   }
@@ -342,21 +317,13 @@
   }
   .block08 {
     padding: 60px 0;
-    border-bottom: 1px solid #ff6700;
   }
   .block08 h2 {
-    font-size: 36px;
-    color: #394349;
     margin-bottom: 30px;
   }
   .block08 ul li {
-    float: left;
     width: 340px;
     font-size: 15px;
-    font-weight: 300;
-  }
-  .block08 ul li p {
-    margin-bottom: 10px;
   }
   .block08 ul li:first-child {
     width: 320px;
@@ -365,22 +332,17 @@
   .block09 {
     padding: 60px 0;
   }
-  .block09 h2 {
-    font-size: 36px;
-    color: #394349;
-    margin-bottom: 30px;
-  }
   .block09 .top-text {
-    color: #606060;
     font-size: 19px;
     padding: 0 160px;
     margin-bottom: 40px;
   }
+  .block09 .seminar {
+    margin: 0;
+  }
   .block09 .seminar li {
-    float: left;
     width: 170px;
     font-size: 18px;
-    font-weight: 300;
     line-height: 20px;
   }
   .block09 .seminar li .item-image {
@@ -395,9 +357,6 @@
     right: -30px;
     position: absolute;
     background: url("../img/09_arrow.png") 0 0 no-repeat;
-  }
-  .block09 .seminar li .item-text {
-    text-align: center;
   }
   .block10 {
     height: 472px;
@@ -417,14 +376,161 @@
     font-size: 43px;
     text-align: right;
   }
+  .block11 {
+    color: #fff;
+    height: 646px;
+    padding: 40px 0;
+    background: url("../img/11_bg.jpg") top center no-repeat;
+  }
+  .block11 .text-block {
+    width: 780px;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0 auto 80px auto;
+    background: url("../img/pattern-brown.png");
+  }
+  .block11 .text-block h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .block11 ul li {
+    float: left;
+    width: 205px;
+    height: 245px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-right: 50px;
+    text-align: center;
+    color: #394349;
+    text-transform: uppercase;
+    padding: 30px 20px 15px 20px;
+    background: url("../img/pattern-white.png");
+  }
+  .block11 ul li .item-image {
+    width: 110px;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+  }
+  .block11 ul li:last-child {
+    margin-right: 0;
+  }
+  .block12 {
+    padding: 50px 0;
+  }
+  .block12 h2 {
+    margin-bottom: 30px;
+  }
+  .block12 p {
+    width: 850px;
+    color: #606060;
+    margin: 0 auto 30px auto;
+  }
+  .block12 .image-block {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .block12 .image-block .item-image {
+    float: left;
+    width: 33.33333%;
+  }
+  .block13 {
+    color: #fff;
+    height: 646px;
+    padding-top: 60px;
+    background: url("../img/13_bg.jpg") top center no-repeat;
+  }
+  .block13 .text-block {
+    width: 680px;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 45px;
+    margin: 0 auto 80px auto;
+    background: url("../img/pattern-brown.png");
+  }
+  .block13 .text-block h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .block13 ul {
+    width: 900px;
+    margin-left: 105px;
+  }
+  .block13 ul li {
+    float: left;
+    width: 220px;
+    height: 260px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 80px;
+    color: #394349;
+    text-transform: uppercase;
+    padding: 30px 15px 15px 15px;
+    background: url("../img/pattern-white.png");
+  }
+  .block13 ul li .item-image {
+    width: 110px;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+  }
+  .block14 {
+    padding: 40px 0;
+  }
+  .block14 h2 {
+    margin-bottom: 30px;
+  }
+  .block14 .product {
+    margin: 0 -11px 30px 10px;
+  }
+  .block14 .product li {
+    float: left;
+    width: 234px;
+    margin: 0 10px 30px 11px;
+  }
+  .block14 .product li .item-image {
+    position: relative;
+    padding-bottom: 29px;
+    background: url("../img/14_shadow-l.png") left bottom no-repeat;
+  }
+  .block14 .product li .price {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .block15 {
+    padding-top: 35px;
+    background: url("../img/02_bg.jpg") top center repeat-y;
+  }
+  .block15 .box {
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+  .block15 .box .box-text {
+    top: 220px;
+    left: 5px;
+    right: 5px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+  }
+  .block15 .box .box-text li {
+    margin-bottom: 10px;
+  }
   .block16 {
     height: 560px;
   }
   .block16 h2 {
     height: 95px;
-    font-size: 36px;
     line-height: 95px;
-    color: #394349;
   }
   .block16 #map {
     width: 100%;
@@ -482,5 +588,38 @@
     height: 100%;
     padding: 25px 50px 10px 50px;
     background: #fff;
+  }
+  .form-title {
+    color: #252525;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .form-title span {
+    display: block;
+    font-size: 34px;
+    line-height: 34px;
+  }
+  .form .form-group {
+    margin-bottom: 18px;
+  }
+  .form input[type="text"],
+  .form input[type="tel"],
+  .form input[type="email"],
+  .form input[type="password"] {
+    height: 42px;
+    padding: 10px;
+  }
+  .form .form-label {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .form .footnote {
+    font-size: 13px;
   }
 }

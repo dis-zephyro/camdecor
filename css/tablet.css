@@ -26,6 +26,7 @@
     display: block;
   }
   .block02 h2 {
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .block02 .inner {
@@ -78,7 +79,7 @@
     margin-right: 40px;
   }
   .block03 .top {
-    height: 230px;
+    height: 100px;
     display: block;
     background: #ffffff url("../img/01_bg.png") top left repeat-x;
   }
@@ -86,6 +87,7 @@
     border-top-color: transparent;
   }
   .block03 h2 {
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .block03 .inner {
@@ -131,6 +133,251 @@
   .block03 .img-two {
     width: 302px;
     margin-bottom: 35px;
+  }
+  .block04 {
+    font-size: 12px;
+    padding-top: 45px;
+    background: #ffffff url("../img/01_bg.png") top left repeat-x;
+  }
+  .block04 h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .block04 ul {
+    width: 667px;
+    height: 262px;
+    overflow: hidden;
+    margin: 30px auto 45px auto;
+    position: relative;
+  }
+  .block04 ul li {
+    width: 123px;
+    height: 123px;
+    position: absolute;
+  }
+  .block04 ul li.item01 {
+    top: 0;
+    left: 0;
+  }
+  .block04 ul li.item02 {
+    top: 0;
+    left: 133px;
+  }
+  .block04 ul li.item03 {
+    top: 0;
+    left: 267px;
+  }
+  .block04 ul li.item04 {
+    top: 0;
+    right: 142px;
+  }
+  .block04 ul li.item05 {
+    top: 0;
+    right: 0;
+  }
+  .block04 ul li.item06 {
+    top: 70px;
+    left: 66px;
+  }
+  .block04 ul li.item07 {
+    top: 70px;
+    left: 199px;
+  }
+  .block04 ul li.item08 {
+    top: 70px;
+    right: 206px;
+  }
+  .block04 ul li.item09 {
+    top: 70px;
+    right: 70px;
+  }
+  .block04 ul li.item10 {
+    left: 0;
+    bottom: 0;
+  }
+  .block04 ul li.item11 {
+    left: 133px;
+    bottom: 0;
+  }
+  .block04 ul li.item12 {
+    left: 267px;
+    bottom: 0;
+  }
+  .block04 ul li.item13 {
+    right: 142px;
+    bottom: 0;
+  }
+  .block04 ul li.item14 {
+    right: 0;
+    bottom: 0;
+  }
+  .block05 {
+    color: #fff;
+    padding: 40px 0;
+    background: url("../img/05_bg.jpg") top center no-repeat;
+  }
+  .block06 {
+    padding: 35px 0;
+    border-top: none;
+  }
+  .block06 .clients {
+    width: 100%;
+  }
+  .block06 .clients li {
+    width: 163px;
+    margin: 0 16px 0 0;
+  }
+  .block06 .clients li .item-title {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #ff6700;
+    text-transform: uppercase;
+  }
+  .block06 .clients li:last-child {
+    margin-right: 0;
+  }
+  .block06 .area {
+    overflow: hidden;
+    position: relative;
+    height: 115px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .block06 .area li {
+    width: 137px;
+    height: 115px;
+    position: absolute;
+  }
+  .block06 .area li .item-title {
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  .block06 .area li.item01 {
+    top: 0;
+    left: 0;
+  }
+  .block06 .area li.item02 {
+    top: 0;
+    left: 114px;
+  }
+  .block06 .area li.item03 {
+    top: 0;
+    left: 234px;
+  }
+  .block06 .area li.item04 {
+    top: 0;
+    left: 348px;
+  }
+  .block06 .area li.item05 {
+    top: 0;
+    left: 470px;
+  }
+  .block06 .area li.item06 {
+    top: 0;
+    right: 0;
+  }
+  .block06 .image {
+    overflow: hidden;
+  }
+  .block06 .image li {
+    float: left;
+    width: 233px;
+    padding: 0 3px;
+  }
+  .block07 {
+    height: 330px;
+    padding-top: 40px;
+    background: url("../img/07_bg-m.jpg") bottom center no-repeat;
+  }
+  .block08 {
+    padding: 40px 0;
+    border-bottom: 1px solid #ff6700;
+  }
+  .block08 h2 {
+    margin-bottom: 20px;
+  }
+  .block08 ul li {
+    float: left;
+    width: 240px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .block08 ul li p {
+    margin-bottom: 10px;
+  }
+  .block08 ul li:first-child {
+    width: 220px;
+    padding: 0 15px;
+  }
+  .block09 {
+    padding: 30px 0;
+  }
+  .block09 .top-text {
+    padding: 0 100px;
+    margin-bottom: 30px;
+  }
+  .block09 .seminar {
+    width: auto;
+    margin: 0 -10px;
+  }
+  .block09 .seminar li {
+    float: left;
+    width: 120px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-bottom: 0;
+  }
+  .block09 .seminar li .item-image {
+    width: 109px;
+    position: relative;
+    margin: 0 auto 10px auto;
+  }
+  .block09 .seminar li .arrow {
+    bottom: 8px;
+    width: 45px;
+    height: 35px;
+    right: -33px;
+    position: absolute;
+    background: url("../img/09_arrow-m.png") 0 0 no-repeat;
+  }
+  .block09 .seminar li .item-text {
+    text-align: center;
+  }
+  .text-box {
+    float: left;
+    width: 410px;
+  }
+  .text-box h2 {
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    background: url("../img/pattern-brown.png");
+  }
+  .text-box p {
+    width: 325px;
+    padding: 14px;
+    font-size: 13px;
+    background: url("../img/pattern-brown2.png");
+  }
+  .form-box {
+    float: right;
+    width: 260px;
+    padding: 8px;
+    color: #252525;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+  .form-box .form-box-inner {
+    width: 100%;
+    height: 100%;
+    padding: 25px 30px 10px 30px;
+    background: #fff;
   }
   .float-left {
     float: left !important;
