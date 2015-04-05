@@ -450,6 +450,49 @@
   .block15 .box .box-text {
     top: 150px;
   }
+  .footer {
+    padding: 0;
+    height: 120px;
+    position: relative;
+  }
+  .footer .footer-top {
+    height: 61px;
+    text-align: left;
+    border-bottom: 1px solid #ff6700;
+  }
+  .footer .footer-top .footer-text {
+    height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+  .footer .footer-top .footer-text span {
+    display: inline;
+    color: #ff6700;
+  }
+  .footer .footer-top .btn {
+    top: 15px;
+    right: 0;
+    margin-bottom: 0;
+    position: absolute;
+  }
+  .footer .footer-bottom {
+    height: 60px;
+    font-size: 11px;
+    padding-top: 15px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .footer .footer-bottom .copy {
+    float: left;
+    width: 250px;
+    margin-bottom: 0;
+  }
+  .footer .footer-bottom .dev {
+    float: right;
+    width: 300px;
+    text-align: right;
+  }
   .text-box {
     float: left;
     width: 410px;
@@ -480,6 +523,13 @@
     height: 100%;
     padding: 25px 30px 10px 30px;
     background: #fff;
+  }
+  .popup-form {
+    width: 300px;
+    padding: 25px 30px;
+  }
+  .done {
+    font-size: 30px;
   }
   .float-left {
     float: left !important;

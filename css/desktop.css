@@ -273,6 +273,7 @@
   }
   .block06 .clients li .item-title {
     font-size: 18px;
+    line-height: 30px;
   }
   .block06 .area {
     height: 180px;
@@ -572,5 +573,9 @@
   }
   .form .footnote {
     font-size: 13px;
+  }
+  .popup-form {
+    width: 370px;
+    padding: 25px 40px;
   }
 }

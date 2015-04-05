@@ -1,3 +1,44 @@
+$(document).ready(function() {
+
+    $('.btn-submit').click(function() {
+
+        $('body').find('form:not(this)').children('label').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
+        var answer = checkForm($(this).parent().get(0)); //ответ от валидатора
+        if(answer != false)
+        {
+            var $form = $(this).parent(),
+                name =     $('input[name="name"]', $form).val(),
+                phone =    $('input[name="phone"]', $form).val(),
+                email =    $('input[name="email"]', $form).val();
+            console.log(name, phone, email);
+            $.ajax({
+                type: "POST",
+                url: "form-handler.php",
+                data: {name: name, phone: phone, email : email}
+            }).done(function(msg) {
+                console.log(name, phone, email);
+                $('form').find('input[type=text], textarea').val('');
+                console.log('удачно');
+                $.fancybox(
+                    '<div class="done">'+ 'Ваше сообщение<br/>успешно отправлено' +'</div>',
+                    {
+                        'autoDimensions'  : false,
+                        'padding': 0,
+                        'minWidth': 600,
+                        'transitionIn'    : 'none',
+                        'transitionOut'   : 'none',
+                        'closeBtn' : false
+                    }
+                );
+                setTimeout("$.fancybox.close()", 3000);
+            });
+        }
+
+        var h = $(window).height();
+    });
+});
+
+
 // Мобильное меню.
 
 $(function() {
@@ -15,6 +56,15 @@ $(function() {
             menu.removeAttr('style');
         }
     });
+});
+
+$(".popup").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
+
+$('.btn-close').click(function(){
+    $.fancybox.close();
 });
 
 
@@ -48,3 +98,5 @@ function init(){
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects.add(myPlacemark);
 }
+
+

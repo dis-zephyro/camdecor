@@ -24,15 +24,15 @@
                 <a href="#" id="pull">Меню</a>
                 <div class="topnav-inner">
                     <ul>
-                        <li><a href="#block">Производство</a></li>
-                        <li><a href="#block">Свойства плитки</a></li>
-                        <li><a href="#block">Работа на дому</a></li>
-                        <li><a href="#block">Возможности рынка</a></li>
-                        <li><a href="#block">Наши работы</a></li>
-                        <li><a href="#block">Обучающие семинары</a></li>
-                        <li><a href="#block">Продажа продукции</a></li>
-                        <li><a href="#block">Цены</a></li>
-                        <li><a href="#block">Контакты</a></li>
+                        <li><a href="#block02">Производство</a></li>
+                        <li><a href="#block04">Свойства плитки</a></li>
+                        <li><a href="#block03">Работа на дому</a></li>
+                        <li><a href="#block06">Возможности рынка</a></li>
+                        <li><a href="#block14">Наши работы</a></li>
+                        <li><a href="#block09">Обучающие семинары</a></li>
+                        <li><a href="#block13">Продажа продукции</a></li>
+                        <li><a href="#block14">Цены</a></li>
+                        <li><a href="#block16">Контакты</a></li>
 
                     </ul>
                 </div>
@@ -67,7 +67,7 @@
                 </ul>
             </div>
         </section>
-        <section class="block02">
+        <section class="block02" id="block02">
             <div class="inner">
                 <div class="text-top-inner">
                     <div class="container">
@@ -94,12 +94,12 @@
             <div class="bottom">
                 <div class="container">
                     <div class="bottom-block">
-                        <a class="btn btn-m popup">Задать вопрос</a>
+                        <a href="#popup" class="btn btn-m popup">Задать вопрос</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="block03">
+        <section class="block03"  id="block03">
             <div class="top"></div>
             <div class="inner">
                 <div class="text-top-inner">
@@ -130,13 +130,13 @@
             <div class="bottom">
                 <div class="container">
                     <div class="bottom-block">
-                        <a class="btn btn-l popup">Узнать технологию процесса</a>
+                        <a href="#popup" class="btn btn-l popup">Узнать технологию процесса</a>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="block04 hidden-mobile">
+        <section class="block04 hidden-mobile"  id="block04">
             <div class="container">
                 <h2>Свойства нашей продукции</h2>
                 <p>Гипсовая плитка способна украсить любое помещение. Внешне она очень похожа на натуральные материалы, но при этом имеет перед ними целый ряд преимуществ. Плитка гораздо легче каменных аналогов, значит, для ее установки не понадобятся дополнительные крепления на стенах. Нужно лишь предварительно загрунтовать поверхность и потом приклеить изделия соответствующим клеем.</p>
@@ -202,14 +202,16 @@
                         </div>
                         <form id="form1" class="form"  method="post" action="javascript:void(0);">
                             <div class="form-group">
-                                <input name="name" type="text" placeholder="Имя" required="required" pattern="[A-Za-zА-Яа-яЁё]{3,20}">
+                                <label class="name none required">
+                                    <input type="text" name="name">
+                                </label>
                             </div>
                             <div class="form-group">
-                                <input name="phone" type="text" placeholder="Телефон" required="required" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,16}$">
+                                <label class="phone none required">
+                                    <input type="text" name="phone">
+                                </label>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-m btn-submit">отправить</button>
-                            </div>
+                            <button type="submit" class="btn btn-m btn-submit">отправить</button>
                             <p class="footnote">*ваши данные не будут<br/>
                                 переданы третьим лицам </p>
                         </form>
@@ -217,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="block06">
+        <section class="block06" id="block06">
             <div class="container">
                 <h2 class="hidden-mobile">Область применения и возможности рынка</h2>
                 <p class="hidden-mobile">Гипсовая плитка предназначена не только для внутренней отделки помещения - при изменении рецептуры состава гипсовой смеси изделия применяются для наружной отделки зданий. Ее декоративная ценность заключается в том, что дизайн ограничивается лишь фантазией мастера. По желанию возможно создать любой рисунок, подобрать уникальную цветовую гамму или текстуру, перенести приглянувшийся эскиз. Нередко плитка имитирует структуру различных натуральных камней: сланец, песчаник. Она может быть похожа на древний кирпич или каминный изразец. К тому же существует множество технологий окрашивания, которые легко изучить за пару дней.</p>
@@ -299,14 +301,16 @@
                         </div>
                         <form id="form2" class="form"  method="post" action="javascript:void(0);">
                             <div class="form-group">
-                                <input name="name" type="text" placeholder="Имя" required="required" pattern="[A-Za-zА-Яа-яЁё]{3,20}">
+                                <label class="name none required">
+                                    <input type="text" name="name">
+                                </label>
                             </div>
                             <div class="form-group">
-                                <input name="phone" type="text" placeholder="Телефон" required="required" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,16}$">
+                                <label class="phone none required">
+                                    <input type="text" name="phone">
+                                </label>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-m btn-submit">отправить</button>
-                            </div>
+                            <button type="submit" class="btn btn-m btn-submit">отправить</button>
                             <p class="footnote">*ваши данные не будут<br/>
                                 переданы третьим лицам </p>
                         </form>
@@ -327,7 +331,7 @@
                 </ul>
             </div>
         </section>
-        <section class="block09">
+        <section class="block09" id="block09">
             <div class="container">
                 <h2>Обучающие семинары</h2>
                 <div class="top-text">Любой желающий может посетить бесплатный обучающий семинар, на котором будут раскрыты основы техгнологии и основные выгоды производства декоративной гипсовой плитки в домашних условиях. Обучение проходит по следующей схеме:</div>
@@ -391,14 +395,16 @@
                         </div>
                         <form id="form3" class="form"  method="post" action="javascript:void(0);">
                             <div class="form-group">
-                                <input name="name" type="text" placeholder="Имя" required="required" pattern="[A-Za-zА-Яа-яЁё]{3,20}">
+                                <label class="name none required">
+                                    <input type="text" name="name">
+                                </label>
                             </div>
                             <div class="form-group">
-                                <input name="phone" type="text" placeholder="Телефон" required="required" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,16}$">
+                                <label class="phone none required">
+                                    <input type="text" name="phone">
+                                </label>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-m btn-submit">отправить</button>
-                            </div>
+                            <button type="submit" class="btn btn-m btn-submit">отправить</button>
                             <p class="footnote">*ваши данные не будут<br/>
                                 переданы третьим лицам </p>
                         </form>
@@ -463,7 +469,7 @@
                 <p class="hidden-mobile">Это при том, что наше оборудование позволяет производить продукт очень высокого качества и цена его квадратного метра на рынке будет на несколько сотен рублей выше. Все это при самых скромных подсчетах дает ежемесячный доход свыше 76 000 руб. в месяц на одного работающего при 5-8 часовых рабочих днях в неделю. А заключаемый с нами договор дает возможность нанимать до 5 работников. В общем, считайте сами.</p>
             </div>
         </section>
-        <section class="block13">
+        <section class="block13" id="block13">
             <div class="container">
                 <div class="text-block">
                     <h2>Продажа готовой продукции</h2>
@@ -491,7 +497,7 @@
                 </ul>
             </div>
         </section>
-        <section class="block14">
+        <section class="block14" id="block14">
             <div class="container">
                 <h2>Наша продукция</h2>
                 <div class="product-inner">
@@ -502,7 +508,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -510,7 +516,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -518,7 +524,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -526,7 +532,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -534,7 +540,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -542,7 +548,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -550,7 +556,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -558,7 +564,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -566,7 +572,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -574,7 +580,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -582,7 +588,7 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                     <li>
                         <div class="item-image">
@@ -590,14 +596,14 @@
                             <div class="shadow"></div>
                         </div>
                         <div class="price">150 руб./кв.м.</div>
-                        <a href="#popup" class="btn btn-s">Заказать</a>
+                        <a href="#popup" class="btn btn-s popup">Заказать</a>
                     </li>
                 </ul>
                 </div>
             </div>
             <div class="divider"></div>
             <div class="text-center">
-                <a class="btn btn-l" href="popup">Задать вопрос специалисту</a>
+                <a class="btn btn-l popup" href="#popup">Задать вопрос специалисту</a>
             </div>
         </section>
         <section class="block15">
@@ -620,7 +626,7 @@
                 </div>
             </div>
         </section>
-        <section class="block16">
+        <section class="block16" id="block16">
             <h2>Как нас найти</h2>
             <div id="map"></div>
           </section>
@@ -628,7 +634,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="footer-text">Если остались вопросы, звоните! <span>8-800-000-00-00</span> или</div>
-                    <a class="btn btn-m popup">Заказать звонок</a>
+                    <a href="#popup" class="btn btn-m popup">Заказать звонок</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -639,10 +645,39 @@
             </div>
         </footer>
 
+        <div class="hidden">
+            <div class="popup-form" id="popup">
+                <span class="btn-close"></span>
+                <div class="popup-form-title">Заявка</div>
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
+                    <div class="form-group">
+                        <div class="form-label">Имя</div>
+                        <label class="name none required">
+                            <input type="text" name="name">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-label">Телефон</div>
+                        <label class="phone none required">
+                            <input type="text" name="phone">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-label">E-mail</div>
+                        <label class="none">
+                            <input type="text" name="email">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-m btn-submit">отправить</button>
+                </form>
+            </div>
+        </div>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/validator.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
