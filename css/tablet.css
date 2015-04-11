@@ -12,7 +12,7 @@
     font-size: 21px;
     line-height: 25px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     padding: 15px 7px 10px 7px;
   }
   .header h1 span {
@@ -305,6 +305,7 @@
     width: 240px;
     font-size: 12px;
     font-weight: 300;
+    text-align: center;
   }
   .block08 ul li p {
     margin-bottom: 10px;
@@ -373,14 +374,14 @@
   }
   .block11 .text-block {
     width: 525px;
-    margin: 0 auto 55px auto;
+    margin: 0 auto 30px auto;
   }
   .block11 .text-block h2 {
     margin-bottom: 10px;
   }
   .block11 ul {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
   }
   .block11 ul li {
     margin-bottom: 0;
