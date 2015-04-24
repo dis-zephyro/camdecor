@@ -52,7 +52,8 @@
   }
   .header .logo-bar .header-logo {
     height: 50px;
-    margin-left: 0;
+    width: 160px;
+    margin: 0 auto;
     background: url("../img/logo-large.png") left center no-repeat;
   }
   .header .logo-bar .header-phone {
@@ -453,7 +454,7 @@
     margin-bottom: 30px;
   }
   .block14 .product-inner {
-    margin: 0 -11px 0 -10px;
+    margin: 0 -11px 20px -10px;
   }
   .block14 .product li {
     width: 234px;
@@ -462,6 +463,9 @@
   .block14 .product li .item-image {
     padding-bottom: 29px;
     background: url("../img/14_shadow-l.png") left bottom no-repeat;
+  }
+  .block14 .product li .old-price {
+    font-size: 20px;
   }
   .block14 .product li .price {
     font-size: 30px;
@@ -491,6 +495,9 @@
     height: 90px;
     line-height: 90px;
   }
+  .block16 .city li span {
+    font-size: 20px;
+  }
   .block16 #map {
     width: 100%;
     height: 465px;
@@ -500,13 +507,11 @@
     position: relative;
   }
   .footer .footer-top {
-    height: 90px;
     border-bottom: 1px solid #ff6700;
   }
   .footer .footer-top .footer-text {
-    height: 90px;
-    font-size: 28px;
-    line-height: 89px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .footer .footer-top .footer-text span {
     color: #ff6700;

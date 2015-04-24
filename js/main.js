@@ -100,10 +100,17 @@ $(".code").fancybox({
     'closeBtn' : false
 });
 
+$(".sertification a").fancybox({
+    'padding' : 0
+});
+
 $('.btn-close').click(function(){
     $.fancybox.close();
 });
 
+
+
+// Подключние Яндекс-Карты
 
 ymaps.ready(init);
 
@@ -112,8 +119,8 @@ var myMap,
 
 function init(){
     myMap = new ymaps.Map("map", {
-        center: [45.01120430, 41.92022450],
-        zoom: 16,
+        center: [45.0355,41.9203],
+        zoom: 17,
         controls: ['smallMapDefaultSet']
     });
 
@@ -124,7 +131,7 @@ function init(){
         // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: 'img/placemark.png ',
+        iconImageHref: 'img/placemark.png',
         // Размеры метки.
         iconImageSize: [94, 105],
         // Смещение левого верхнего угла иконки относительно
@@ -134,6 +141,102 @@ function init(){
 
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects.add(myPlacemark);
+
+    $('#map1').bind({
+        click: function () {
+
+            $("#adr2, #adr3").hide();
+            $("#adr1").show();
+
+            myMap.destroy();
+            myMap = new ymaps.Map('map', {
+                center: [45.0355,41.9203],
+                zoom: 17
+            });
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Камдекор'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/placemark.png',
+                // Размеры метки.
+                iconImageSize: [94, 105],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-30, -70]
+            });
+
+            myMap.behaviors.disable('scrollZoom');
+            myMap.geoObjects.add(myPlacemark);
+        }
+    });
+
+    $('#map2').bind({
+        click: function () {
+
+            $("#adr1, #adr3").hide();
+            $("#adr2").show();
+
+            myMap.destroy();
+            myMap = new ymaps.Map('map', {
+                center: [45.0312,39.0571],
+                zoom: 17
+            });
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Камдекор'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/placemark.png',
+                // Размеры метки.
+                iconImageSize: [94, 105],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-30, -70]
+            });
+
+            myMap.behaviors.disable('scrollZoom');
+            myMap.geoObjects.add(myPlacemark);
+        }
+    });
+
+    $('#map3').bind({
+        click: function () {
+
+            $("#adr1, #adr2").hide();
+            $("#adr3").show();
+
+            myMap.destroy();
+            myMap = new ymaps.Map('map', {
+                center: [47.2502,39.7755],
+                zoom: 16
+            });
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Камдекор'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/placemark.png',
+                // Размеры метки.
+                iconImageSize: [94, 105],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-30, -70]
+            });
+
+            myMap.behaviors.disable('scrollZoom');
+            myMap.geoObjects.add(myPlacemark);
+        }
+    });
 }
 
 

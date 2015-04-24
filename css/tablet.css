@@ -429,7 +429,7 @@
     margin-bottom: 20px;
   }
   .block14 .product-inner {
-    margin: 0 -10px;
+    margin: 0 -10px 20px -10px;
   }
   .block14 .product {
     width: 100%;
@@ -451,20 +451,36 @@
   .block15 .box .box-text {
     top: 150px;
   }
+  .block16 .city {
+    width: 690px;
+    margin-bottom: 15px;
+  }
+  .block16 .city li {
+    float: left;
+    width: 230px;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .block16 .city li span {
+    font-size: 16px;
+  }
+  .block16 .city li p {
+    font-size: 12px;
+  }
   .footer {
     padding: 0;
     height: 120px;
     position: relative;
   }
   .footer .footer-top {
-    height: 61px;
     text-align: left;
     border-bottom: 1px solid #ff6700;
   }
   .footer .footer-top .footer-text {
-    height: 60px;
-    font-size: 18px;
-    line-height: 60px;
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 20px;
     margin-bottom: 0;
   }
   .footer .footer-top .footer-text span {
@@ -493,6 +509,16 @@
     float: right;
     width: 300px;
     text-align: right;
+  }
+  .sertification ul {
+    width: 680px;
+  }
+  .sertification ul li {
+    width: 33.3%;
+    padding: 0 15px;
+  }
+  .sertification ul li:last-child {
+    margin-left: 33.3%;
   }
   .text-box {
     float: left;

@@ -96,10 +96,9 @@ hr {
   background: url("../img/pattern-brown.png");
 }
 .header .logo-bar .header-logo {
-  float: left;
-  width: 160px;
+  width: 100px;
   height: 33px;
-  margin-left: 40px;
+  margin: 0 auto;
   background: url("../img/logo-small.png") left center no-repeat;
 }
 .header .logo-bar .header-phone {
@@ -444,7 +443,7 @@ hr {
   margin-bottom: 20px;
 }
 .block14 .product-inner {
-  margin: 0 -10px;
+  margin: 0 -10px 20px -10px;
 }
 .block14 .product {
   width: 320px;
@@ -465,6 +464,12 @@ hr {
   text-align: center;
   margin-bottom: 5px;
   text-transform: uppercase;
+}
+.block14 .product li .old-price {
+  color: #909090;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: line-through;
 }
 .block14 .text-center {
   padding-top: 10px;
@@ -494,6 +499,22 @@ hr {
   height: 60px;
   line-height: 60px;
 }
+.block16 .city {
+  margin: 0 auto 15px auto;
+}
+.block16 .city li {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.block16 .city li span {
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #c0c0c0;
+}
+.block16 .city li p {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
 .block16 #map {
   width: 100%;
   height: 310px;
@@ -506,13 +527,23 @@ hr {
   text-align: center;
 }
 .footer .footer-top .footer-text {
-  font-size: 18px;
-  line-height: 22px;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 10px;
 }
 .footer .footer-top .footer-text span {
   display: block;
   color: #ff6700;
+}
+.footer .footer-top .footer-text span i {
+  width: 16px;
+  height: 10px;
+  display: inline-block;
+}
+.footer .footer-top .footer-text #adr2,
+.footer .footer-top .footer-text #adr3 {
+  display: none;
 }
 .footer .footer-top .btn {
   margin-bottom: 20px;
@@ -524,6 +555,33 @@ hr {
 }
 .footer .footer-bottom .copy {
   margin-bottom: 5px;
+}
+.sertification {
+  padding: 40px 0;
+}
+.sertification h2 {
+  margin-bottom: 40px;
+}
+.sertification .inner {
+  position: relative;
+}
+.sertification ul {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.sertification ul li {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
+.sertification ul li img {
+  border: 1px solid #cccccc;
+}
+.sertification ul li:last-child {
+  margin-left: 25%;
 }
 .divider {
   height: 20px;
