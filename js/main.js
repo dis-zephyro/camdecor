@@ -136,7 +136,7 @@ function init(){
         iconImageSize: [94, 105],
         // Смещение левого верхнего угла иконки относительно
         // её "ножки" (точки привязки).
-        iconImageOffset: [-30, -70]
+        iconImageOffset: [ 0, -105]
     });
 
     myMap.behaviors.disable('scrollZoom');
@@ -150,7 +150,7 @@ function init(){
 
             myMap.destroy();
             myMap = new ymaps.Map('map', {
-                center: [45.0355,41.9203],
+                center: [45.0356,41.9208],
                 zoom: 17
             });
 
@@ -182,7 +182,7 @@ function init(){
 
             myMap.destroy();
             myMap = new ymaps.Map('map', {
-                center: [45.0312,39.0571],
+                center: [45.0247,39.0558],
                 zoom: 17
             });
 
@@ -215,7 +215,7 @@ function init(){
             myMap.destroy();
             myMap = new ymaps.Map('map', {
                 center: [47.2502,39.7755],
-                zoom: 16
+                zoom: 17
             });
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -230,7 +230,7 @@ function init(){
                 iconImageSize: [94, 105],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
-                iconImageOffset: [-30, -70]
+                iconImageOffset: [-50, -80]
             });
 
             myMap.behaviors.disable('scrollZoom');
@@ -240,3 +240,8 @@ function init(){
 }
 
 
+$('.topnav li a').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, {offset:-80});
+    return false;
+});

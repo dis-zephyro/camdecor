@@ -11,14 +11,14 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
-        <!--link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/tablet.css">
-        <link rel="stylesheet" href="css/desktop.css"-->
-
-        <link rel="stylesheet/less" href="css/main.less">
+        <link rel="stylesheet" href="css/desktop.css">
+        <script src="js/vendor/respond.src.js"></script>
+        <!--link rel="stylesheet/less" href="css/main.less">
         <link rel="stylesheet/less" href="css/tablet.less">
         <link rel="stylesheet/less" href="css/desktop.less">
-        <script src="js/vendor/less.min.js"></script>
+        <script src="js/vendor/less.min.js"></script-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
@@ -28,9 +28,9 @@
                 <a href="#" id="pull">Меню</a>
                 <div class="topnav-inner">
                     <ul>
-                        <li><a href="#block02">Производство</a></li>
-                        <li><a href="#block04">Свойства плитки</a></li>
-                        <li><a href="#block03">Работа на дому</a></li>
+                        <li><a href="#block03">Производство</a></li>
+                        <li class="hidden-mobile"><a href="#block04">Свойства плитки</a></li>
+                        <li><a href="#block02">Работа на дому</a></li>
                         <li><a href="#block06">Возможности рынка</a></li>
                         <li class="hidden"><a href="#block14">Наши работы</a></li>
                         <li><a href="#block09">Обучающие семинары</a></li>
@@ -731,7 +731,7 @@
                 </li>
                 <li>
                     <span id="map2">Краснодар</span>
-                    <p>ул. Лизы Чайкиной, 3-й этаж, 324 каб</p>
+                    <p>ул. Сормовская 3/7</p>
                 </li>
                 <li>
                     <span id="map3">Ростов-на-Дону</span>
@@ -744,9 +744,9 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="footer-text">
-                        <div id="adr1">г. Ставрополь, пр. Ботанический 1, 1-й подъезд, цокольный этаж (за магазином ТелеМир)<br/><span>8-989-818-18-60<i></i>8-988-55-888-09</span></div>
-                        <div id="adr2">Краснодар: ул. Лизы Чайкиной, 3-й этаж, 324 каб. Трехэтажное офисное здание напротив магазина «Магнит» <br/><span>8-918-18-848-18</span></div>
-                        <div id="adr3">Ростов-на-Дону: ул. Клары Цеткин 1 <br/><span>8-918-123-61-61<i></i>8-918-08-444-22</span></div>
+                        <div id="adr1">г. Ставрополь, пр. Ботанический 1, 1-й подъезд, цокольный этаж (за магазином ТелеМир)<br/><span>8-989-818-18-60;<i></i>8-988-55-888-09</span></div>
+                        <div id="adr2">Краснодар: ул. Сормовская 3/7<br/><span>8-918-18-848-18</span></div>
+                        <div id="adr3">Ростов-на-Дону: ул. Клары Цеткин 1 <br/><span>8-918-123-61-61;<i></i>8-918-08-444-22</span></div>
                     </div>
                     <a href="#popup" class="btn btn-m popup hidden">Заказать звонок</a>
                 </div>
@@ -821,7 +821,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/vendor/validator.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
