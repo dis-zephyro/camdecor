@@ -13,11 +13,11 @@ button,
 input,
 select,
 textarea {
-  color: #000000;
+  color: #394349;
 }
 html {
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.3;
   font-family: 'Roboto Condensed', sans-serif;
 }
 hr {
@@ -458,6 +458,13 @@ hr {
   position: relative;
   padding-bottom: 21px;
   background: url("../img/14_shadow-m.png") left bottom no-repeat;
+}
+.block14 .product li .article {
+  color: #909090;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .block14 .product li .price {
   font-size: 18px;
