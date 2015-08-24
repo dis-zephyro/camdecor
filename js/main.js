@@ -7,17 +7,18 @@ $(document).ready(function() {
         if(answer != false)
         {
             var $form = $(this).parent(),
-                name =     $('input[name="name"]', $form).val(),
+                name  =    $('input[name="name"]', $form).val(),
                 phone =    $('input[name="phone"]', $form).val(),
                 email =    $('input[name="email"]', $form).val(),
-                quest = $("textarea[name='quest']", $form).val();
+                quest =    $("textarea[name='quest']", $form).val();
+                art   =    $("textarea[name='art']", $form).val();
             console.log(name, phone, email);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, email : email, quest : quest}
+                data: {name: name, phone: phone, email : email, quest : quest, art : art}
             }).done(function(msg) {
-                console.log(name, phone, email);
+                console.log(name, phone, email, quest, art);
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
                 $.fancybox(

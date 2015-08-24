@@ -1,6 +1,6 @@
 <?
-    $to  = "steellive@yandex.ru";
-    $subject = "Сообщение с сайта autoteplo";
+    $to  = "kamdekor@mail.ru";
+    $subject = "Сообщение с сайта kamdekor";
     $name = htmlspecialchars($_POST['name']);
     $phone = htmlspecialchars($_POST['phone']);
     $auto = htmlspecialchars($_POST['auto']);
